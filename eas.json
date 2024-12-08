@@ -1,27 +1,4 @@
 {
-  "build": {
-    "development": {
-      "android": {
-        "buildType": "apk"
-      },
-      "ios": {
-      }
-    },
-    "preview": {
-      "android": {
-        "buildType": "apk"
-      },
-      "ios": {
-      }
-    },
-    "production": {
-      "android": {
-        "buildType": "app-bundle"  
-      },
-      "ios": {
-      }
-    }
-  },
   "expo": {
     "owner": "tnmy07",
     "slug": "my-app",
@@ -34,6 +11,57 @@
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
+    },
+    "privacy": "public",
+    "sdkVersion": "49.0.0",
+    "updates": {
+      "enabled": true,
+      "checkAutomatically": "ON_LOAD",
+      "fallbackToCacheTimeout": 0
+    },
+    "ios": {
+      "bundleIdentifier": "com.yourname.myapp",
+      "buildNumber": "1",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.yourname.myapp",
+      "versionCode": 1, 
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png", 
+        "backgroundColor": "#FFFFFF"
+      }
+    }
+  },
+  "build": {
+    "development": {
+      "android": {
+        "buildType": "apk"
+      },
+      "cli": {
+        "appVersionSource": "project"
+      },
+      "ios": {}
+    },
+    "preview": {
+      "android": {
+        "buildType": "apk"
+      },
+      "cli": {
+        "appVersionSource": "project"
+      },
+      "ios": {}
+    },
+    "production": {
+      "android": {
+        "buildType": "app-bundle" 
+      },
+      "cli": {
+        "appVersionSource": "project"
+      },
+      "ios": {
+        "buildType": "release"
+      }
     }
   }
 }
