@@ -1,0 +1,19 @@
+FBXYEQx1Fd
+o5P6qfiu6l
+Configuration: Build Credentials o5P6qfiu6l (Default)
+Keystore
+Type                JKS
+Key Alias           26a0cbadceb1805f74d977d30aa3ce11
+MD5 Fingerprint     3D:CD:63:35:0F:B1:F4:A1:C5:98:CE:ED:C5:CD:A3:3C
+SHA1 Fingerprint    FE:95:E8:B9:A7:3E:74:43:6D:28:19:9B:AB:DA:08:B2:4B:83:26:7E
+SHA256 Fingerprint  86:51:FE:17:F7:14:3E:10:E7:07:35:9D:81:5B:DF:E8:89:EB:2E:C9:EE:81:A0:D3:DB:41:D0:B9:2C:C7:88:77
+Updated             22 seconds ago
+
+Configuration: Build Credentials FBXYEQx1Fd
+Keystore
+Type                JKS
+Key Alias           8e73989ebb229a8f603533d3e6dc1c8d
+MD5 Fingerprint     49:A3:C8:DC:50:3C:0B:90:18:88:0B:B5:25:40:53:98
+SHA1 Fingerprint    37:5A:EA:DA:41:7D:73:75:48:2E:65:EE:BC:15:17:C7:DF:8E:C5:D6
+SHA256 Fingerprint  C0:CC:04:82:66:E7:0C:7A:2E:BC:E1:1C:07:0D:ED:26:68:63:5B:0E:F2:9E:BF:45:0C:D8:BF:38:8C:DE:54:C8
+Updated             51 seconds ago
