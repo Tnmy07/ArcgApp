@@ -1,25 +1,24 @@
 {
-  "expo": {
-    "owner": "tnmy07",
-    "slug": "my-app",
-    "name": "My App",
-    "platforms": ["android", "ios"],
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    }
-  },
   "build": {
-    "production": {
+    "development": {
       "android": {
         "buildType": "apk"
       },
-      "cli": {
-        "appVersionSource": "project"
+      "ios": {
+      }
+    },
+    "preview": {
+      "android": {
+        "buildType": "apk"
+      },
+      "ios": {
+      }
+    },
+    "production": {
+      "android": {
+        "buildType": "app-bundle"  
+      },
+      "ios": {
       }
     }
   }
