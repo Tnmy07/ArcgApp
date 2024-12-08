@@ -1,12 +1,16 @@
 {
   "expo": {
     "name": "arch_design",
+    "owner": "tnmy07",
     "slug": "arch_design",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
+    "cli": {
+      "appVersionSource": "remote"
+    },
     "splash": {
       "image": "./assets/images/splash.png",
       "resizeMode": "contain",
