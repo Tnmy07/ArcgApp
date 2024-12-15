@@ -7,7 +7,7 @@ import { C_LOGIN, C_OR, C_SIGNUPWITH, C_FROM } from "../../constants/content";
 import * as WebBrowser from 'expo-web-browser';
 import * as Google from 'expo-auth-session/providers/google';
 import * as AuthSession from 'expo-auth-session';
-import * as Random from 'expo-random';
+//import * as Random from 'expo-random';
 import React,{useEffect, useState} from "react";
 import { FORGOT, DASHBOARD,LOGIN } from "../../constants/router";
 import Axios from "axios";
