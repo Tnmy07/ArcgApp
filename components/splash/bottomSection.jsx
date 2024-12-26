@@ -1,7 +1,7 @@
 import { View, Text, Image, StyleSheet } from "react-native";
 import { Link } from "expo-router";
 import { Colors } from "../../constants/colors";
-import { INTRO } from "../constants/router";
+import { INTRO } from "../../constants/router";
 
 export const BottomSection = ({ pagerInfo }) => {
   return (
