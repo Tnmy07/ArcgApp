@@ -1,11 +1,15 @@
 import { View, Text, Image, StyleSheet } from "react-native";
 import { Link } from "expo-router";
 import { Colors } from "../../constants/colors";
-import { INTRO } from "../constants/router";
+import { INTRO } from "../../constants/router";
 import { useNavigation } from '@react-navigation/native';
 
 export const BottomSection = ({ pagerInfo }) => {
   const navigation = useNavigation();
+    const handleSkip = () => {
+    // Navigate to the INTRO screen
+    navigation.navigate(INTRO);
+  };
   return (
     <View style={styles.pager_dots}>
       {pagerInfo.prevLink !== null ? (
@@ -35,7 +39,7 @@ export const BottomSection = ({ pagerInfo }) => {
           </Link>
         ))}
 
-        <Link onPress={() => navigation.navigate('INTRO')} style={styles.skip_text}>
+        <Link onPress={handleSkip} style={styles.skip_text}>
           <Text style={styles.skip}>Skip</Text>
         </Link>
       </View>
