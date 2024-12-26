@@ -1,6 +1,7 @@
 import { View, Text, Image, StyleSheet } from "react-native";
 import { Link } from "expo-router";
 import { Colors } from "../../constants/colors";
+import { INTRO } from "../constants/router";
 
 export const BottomSection = ({ pagerInfo }) => {
   return (
@@ -31,7 +32,7 @@ export const BottomSection = ({ pagerInfo }) => {
             )}
           </Link>
         ))}
-        <Link href={pagerInfo.introLink} style={styles.skip_text}>
+        <Link href={INTRO} style={styles.skip_text}>
           <Text style={styles.skip}>Skip</Text>
         </Link>
       </View>
