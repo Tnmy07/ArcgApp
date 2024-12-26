@@ -1,5 +1,5 @@
 {
-  "name": "arch_design",
+  "name": "arch",
   "main": "expo-router/entry",
   "version": "1.0.0",
   "scripts": {
