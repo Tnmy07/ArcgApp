@@ -115,7 +115,7 @@ export default function Login() {
         </View>
         <View style={styles.link_cover}>
           <View style={styles.link_wrapper}>
-            <Link style={styles.link_text} href="">
+            <Link style={styles.link_text} href={FORGOT}>
               {C_FORGOT}
             </Link>
           </View>

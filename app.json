@@ -1,18 +1,16 @@
 {
   "expo": {
-    "name": "arch_design",
+    "name": "arch",
     "owner": "tnmy07",
-    "slug": "arch_design",
+    "slug": "arch",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/ilogo.png",
+    "icon": "./assets/images/archlogo.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
-    "cli": {
-      "appVersionSource": "remote"
-    },
+    
     "splash": {
-      "image": "./assets/images/splash.png",
+      "image": "./assets/images/archlogo.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -24,7 +22,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/archlogo.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.anonymous.arch_design"
@@ -32,7 +30,7 @@
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/archlogo.png"
     },
     "plugins": [
       "expo-router"

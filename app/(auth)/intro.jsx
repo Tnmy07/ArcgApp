@@ -69,7 +69,6 @@ export default function Intro() {
               var social_media_type = "gmail";
               Axios({
                 method: 'post',
-                // url: 'http://127.0.0.1:8000/api/?v1/user-login',
                 url: 'https://dgificate.in/api/v1/social-login',
                 headers: { 
                   'Content-Type':  'application/json',
@@ -228,14 +227,6 @@ export default function Intro() {
           source={require("../../assets/images/google.png")}
         />
         </TouchableHighlight> 
-        {/* <GoogleLogin
-        onSuccess={credentialResponse => {
-          console.log(credentialResponse);
-        }}
-        onError={() => {
-          console.log('Login Failed');
-        }}
-      />; */}
       </View>
       <View style={styles.from_text}>
         <Text style={styles.from_txt}>{C_FROM}</Text>
