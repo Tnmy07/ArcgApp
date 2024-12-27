@@ -21,8 +21,8 @@ export const TransferedCertificate = () => {
   const fetchInfo = async () => {
     
 
-
-    const dataToken = window.localStorage.getItem("usertoken");
+const dataToken = await AsyncStorage.getItem('usertoken');
+    //const dataToken = window.localStorage.getItem("usertoken");
     Axios({
       method: 'GET',
       url: 'https://dgificate.in/api/v1/transfer-certificate/dashboard',
