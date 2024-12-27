@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { View, StyleSheet, Text, Image, Pressable } from "react-native";
-
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Colors } from "../constants/colors";
 import Axios from "axios";
 import { Link } from "expo-router";
