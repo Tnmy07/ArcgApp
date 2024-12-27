@@ -17,9 +17,9 @@ export const UserInfo = () => {
   const [userId, setuserId] = useState([]);
 
     const fetchuserInfo = async () => {
-       const dataToken =  await window.localStorage.getItem("usertoken");
+       //const dataToken =  await window.localStorage.getItem("usertoken");
      // const dataToken =   window.localStorage.getItem("usertoken");
-      
+      const dataToken = await AsyncStorage.getItem('usertoken');
       Axios({
         method: 'GET',
         url: 'https://dgificate.in/api/v1/user-details',
