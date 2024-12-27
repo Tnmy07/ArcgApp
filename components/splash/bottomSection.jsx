@@ -5,11 +5,11 @@ import { INTRO } from "../../constants/router";
 import { useNavigation } from '@react-navigation/native';
 
 export const BottomSection = ({ pagerInfo }) => {
-  const navigation = useNavigation();
-    const handleSkip = () => {
+ // const navigation = useNavigation();
+   // const handleSkip = () => {
     // Navigate to the INTRO screen
-    navigation.navigate(INTRO);
-  };
+    //navigation.navigate(INTRO);
+  //};
   return (
     <View style={styles.pager_dots}>
       {pagerInfo.prevLink !== null ? (
@@ -39,7 +39,7 @@ export const BottomSection = ({ pagerInfo }) => {
           </Link>
         ))}
 
-        <Link onPress={handleSkip} style={styles.skip_text}>
+        <Link href={pagerInfo.nextLink} style={styles.skip_text}>
           <Text style={styles.skip}>Skip</Text>
         </Link>
       </View>
