@@ -39,9 +39,7 @@ export const BottomSection = ({ pagerInfo }) => {
           </Link>
         ))}
 
-        <Link href={pagerInfo.nextLink} style={styles.skip_text}>
-          <Text style={styles.skip}>Skip</Text>
-        </Link>
+       
        <Link href={INTRO} style={styles.skip_text}>
           <Text style={styles.skip}>Skip1</Text>
         </Link>
