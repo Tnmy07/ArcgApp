@@ -1,5 +1,5 @@
 import { View, Text, Image, StyleSheet } from "react-native";
-import { Link } from "expo-router";
+import { Link, ExpoRouterLink  } from "expo-router";
 import { Colors } from "../../constants/colors";
 import { INTRO } from "../../constants/router";
 import { useNavigation } from '@react-navigation/native';
@@ -13,18 +13,18 @@ export const BottomSection = ({ pagerInfo }) => {
   return (
     <View style={styles.pager_dots}>
       {pagerInfo.prevLink !== null ? (
-        <Link href={pagerInfo.prevLink} style={styles.arrow_box}>
+        <ExpoRouterLink  href={pagerInfo.prevLink} style={styles.arrow_box}>
           <Image
             style={styles.arrow}
             source={require("../../assets/images/arrow1.png")}
           />
-        </Link>
+        </ExpoRouterLink>
       ) : (
         <View style={styles.arrow_box}></View>
       )}
       <View style={styles.dot_cover}>
         {pagerInfo.dot.map((item) => (
-          <Link key={item.path} href={item.path} style={styles.dot_box}>
+          <ExpoRouterLink key={item.path} href={item.path} style={styles.dot_box}>
             {item.actvlink ? (
               <Image
                 style={styles.dot_spl}
@@ -36,21 +36,21 @@ export const BottomSection = ({ pagerInfo }) => {
                 source={require("../../assets/images/dot_white.png")}
               />
             )}
-          </Link>
+          </ExpoRouterLink>
         ))}
 
        
-       <Link href={INTRO} style={styles.skip_text}>
+       <ExpoRouterLink href={INTRO} style={styles.skip_text}>
           <Text style={styles.skip}>Skip1</Text>
-        </Link>
+        </ExpoRouterLink>
       </View>
       {pagerInfo.nextLink !== null ? (
-        <Link href={pagerInfo.nextLink} style={styles.arrow_box}>
+        <ExpoRouterLink href={pagerInfo.nextLink} style={styles.arrow_box}>
           <Image
             style={styles.arrow}
             source={require("../../assets/images/arrow2.png")}
           />
-        </Link>
+        </ExpoRouterLink>
       ) : (
         <View style={styles.arrow_box}></View>
       )}
