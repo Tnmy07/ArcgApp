@@ -13,18 +13,18 @@ export const BottomSection = ({ pagerInfo }) => {
   return (
     <View style={styles.pager_dots}>
       {pagerInfo.prevLink !== null ? (
-        <ExpoRouterLink  href={pagerInfo.prevLink} style={styles.arrow_box}>
+        <Link  href={pagerInfo.prevLink} style={styles.arrow_box}>
           <Image
             style={styles.arrow}
             source={require("../../assets/images/arrow1.png")}
           />
-        </ExpoRouterLink>
+        </Link>
       ) : (
         <View style={styles.arrow_box}></View>
       )}
       <View style={styles.dot_cover}>
         {pagerInfo.dot.map((item) => (
-          <ExpoRouterLink key={item.path} href={item.path} style={styles.dot_box}>
+          <Link key={item.path} href={item.path} style={styles.dot_box}>
             {item.actvlink ? (
               <Image
                 style={styles.dot_spl}
@@ -36,21 +36,21 @@ export const BottomSection = ({ pagerInfo }) => {
                 source={require("../../assets/images/dot_white.png")}
               />
             )}
-          </ExpoRouterLink>
+          </Link>
         ))}
 
        
-       <ExpoRouterLink href={INTRO} style={styles.skip_text}>
+       <Link href={INTRO} style={styles.skip_text}>
           <Text style={styles.skip}>Skip1</Text>
-        </ExpoRouterLink>
+        </Link>
       </View>
       {pagerInfo.nextLink !== null ? (
-        <ExpoRouterLink href={pagerInfo.nextLink} style={styles.arrow_box}>
+        <Link href={pagerInfo.nextLink} style={styles.arrow_box}>
           <Image
             style={styles.arrow}
             source={require("../../assets/images/arrow2.png")}
           />
-        </ExpoRouterLink>
+        </Link>
       ) : (
         <View style={styles.arrow_box}></View>
       )}
