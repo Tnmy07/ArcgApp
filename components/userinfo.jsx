@@ -17,8 +17,8 @@ export const UserInfo = () => {
   const [userId, setuserId] = useState([]);
 
     const fetchuserInfo = async () => {
-      // const dataToken =  await window.localStorage.getItem("usertoken");
-      const dataToken =   window.localStorage.getItem("usertoken");
+       const dataToken =  await window.localStorage.getItem("usertoken");
+     // const dataToken =   window.localStorage.getItem("usertoken");
       
       Axios({
         method: 'GET',
