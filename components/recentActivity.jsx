@@ -18,7 +18,9 @@ export const RecentActivity = () => {
 
     
     const fetchInfo = async () => {
-      const dataToken =  await window.localStorage.getItem("usertoken");
+      //const dataToken =  await window.localStorage.getItem("usertoken");
+        
+        const dataToken = await AsyncStorage.getItem('usertoken');
       console.log(dataToken);
         Axios({
             method: 'GET',
