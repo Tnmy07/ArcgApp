@@ -46,7 +46,8 @@ export default function Login() {
             var TokenVal = response.data;
             try {
               // await AsyncStorage.setItem("usertoken", response.data);
-              window.localStorage.setItem("usertoken", response.data);
+              //window.localStorage.setItem("usertoken", response.data);
+              await AsyncStorage.setItem('usertoken', response.data);
             } catch (error) {
               console.error("Error saving data", error);
             }            
