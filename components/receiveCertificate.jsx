@@ -18,7 +18,8 @@ export const ReceiveCertificate = () => {
   const [certificate, setCarousels] = useState([]);
   const fetchInfo = async () => {
     // const dataToken =  await window.localStorage.getItem("usertoken");
-    const dataToken = window.localStorage.getItem("usertoken");
+    //const dataToken = window.localStorage.getItem("usertoken");
+    const dataToken =await AsyncStorage.getItem('usertoken');
     Axios({
       method: 'GET',
       url: 'https://dgificate.in/api/v1/receive-certificate/dashboard',
