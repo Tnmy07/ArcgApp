@@ -35,8 +35,8 @@ export default function Intro() {
 
 
     const [request, response, promptAsync ] =  Google.useAuthRequest({      
-        // androidClientId : "567010457143-qvlgvsv5bjurbdqjpdf5r4317k4r6tc6.apps.googleusercontent.com",
-        webClientId : "567010457143-tp0s5ldvg0puivit3dmm3jdkd2hiabu0.apps.googleusercontent.com",
+         androidClientId : "567010457143-qvlgvsv5bjurbdqjpdf5r4317k4r6tc6.apps.googleusercontent.com",
+        //webClientId : "567010457143-tp0s5ldvg0puivit3dmm3jdkd2hiabu0.apps.googleusercontent.com",
     }) 
     useEffect(() => {
       // console.log("userEffect",response);
