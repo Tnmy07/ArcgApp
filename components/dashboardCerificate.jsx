@@ -21,7 +21,8 @@ export const DashboardCertificate = () => {
 
 
   const fetchInfo = async () => {
-    const dataToken = await window.localStorage.getItem("usertoken");
+    //const dataToken = await window.localStorage.getItem("usertoken");
+    const dataToken = await AsyncStorage.getItem('usertoken');
     console.log("myCertificate", dataToken)
     Axios({
       method: 'GET',
