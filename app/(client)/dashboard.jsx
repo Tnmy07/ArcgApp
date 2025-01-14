@@ -62,9 +62,9 @@ export default function Dashboard() {
             {useTabName === "dnacertificate" && (
               <ScrollView style={styles.scrollViewcontainer}>
                 <DashboardCertificate />
-                <RecentActivity />
+                {/* <RecentActivity />
                 <ReceiveCertificate />
-                <TransferedCertificate />
+                <TransferedCertificate /> */}
               </ScrollView>
 
             )}
