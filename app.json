@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "arch_design",
+    "name": "archapp",
     "owner": "tnmy07",
-    "slug": "archapp",
+    "slug": "arch_design",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/archlogo.png",
