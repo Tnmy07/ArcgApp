@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "archApp",
-    "owner": "subhra2087",
+    "name": "arch_design",
+    "owner": "tnmy07",
     "slug": "archapp",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -42,7 +42,7 @@
     },
     "extra": {
       "eas": {
-        "projectId": "92a829d9-1b68-4d31-befe-8a8d8ce309e5"
+        "projectId": "f75cd888-515d-4553-890a-5c0ead6cc44c"
       }
     }
   }
