@@ -137,8 +137,8 @@ export default function MyCertificate() {
             />
           </Pressable>
           <View style={styles.tab_content_certificate}>
-          {certificate.map((item) => (
-                  <View key={item} style={styles.item_wrap_two}>
+          {certificate.map((item, k) => (
+                  <View key={k} style={styles.item_wrap_two}>
                     <View style={styles.item_inside_card}>
                       <Image source={item.top_logo} style={styles.avatar} />
                       {/* <View style={styles.itm_round_two}></View> */}

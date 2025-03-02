@@ -17,7 +17,7 @@ export const Input = ({
       <View style={styles.input_cover}>
         <TextInput
           value={value}
-          editable={editable}
+          readOnly={!editable}
           autoCorrect={autoCorrect}
           autoCapitalize={autoCapitalize}
           onChangeText={onChangeText}

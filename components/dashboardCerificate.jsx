@@ -60,8 +60,8 @@ export const DashboardCertificate = () => {
         <View style={styles.tab_content_certificate}>
           {certificate ? (
             <>
-              {certificate.map((item) => (
-                <View key={item} style={styles.item_wrap_two}>
+              {certificate.map((item, k) => (
+                <View key={k} style={styles.item_wrap_two}>
                   <View style={styles.item_inside_card}>
                     <Image source={item.top_logo} style={styles.avatar} />
                     <Text style={styles.itm_text_tow}>Certificate of Bird DNA Test</Text>

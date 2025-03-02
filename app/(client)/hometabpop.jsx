@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { View, StyleSheet, Text, Image, Pressable, CheckBox, FlatList, Modal, TouchableOpacity } from "react-native";
+import { View, StyleSheet, Text, Image, Pressable, CheckBox, FlatList } from "react-native";
 import { Link } from "expo-router";
 
 import { Colors } from "../../constants/colors";
@@ -333,14 +333,14 @@ export default function HomeTabPop() {
                         </View>
 
                       ))}
-                      <TouchableOpacity onPress={() => sendCertificate()}>
+                      <Pressable onPress={() => sendCertificate()}>
                         <View style={styles.center_btn}>
                           <Image
                             style={styles.cert_icon_btnply}
                             source={require("../../assets/images/btnply.png")}
                           />
                         </View>
-                      </TouchableOpacity>
+                      </Pressable>
 
 
                       {isFilterVisible && (
@@ -348,18 +348,18 @@ export default function HomeTabPop() {
                           <View style={styles.filterContainer}>
 
                             <View style={styles.row_data_item}>
-                              <TouchableOpacity onPress={toggleFilter} style={styles.closeButton}>
+                              <Pressable onPress={toggleFilter} style={styles.closeButton}>
                                 <Text style={styles.closeText}>Close</Text>
-                              </TouchableOpacity>
+                              </Pressable>
                               <Text style={styles.heading}>Certificate Status</Text>
 
                             </View>
 
                             <View style={styles.activeContainer}>
                               <Text style={styles.activeText}>Active</Text>
-                              <TouchableOpacity style={styles.active} >
+                              <Pressable style={styles.active} >
                                 <Text style={styles.buttonText}>Active</Text>
-                              </TouchableOpacity>
+                              </Pressable>
                             </View>
                             <Text style={styles.tab_headings_text_trans}>Transfer Certificate</Text>
 
@@ -376,7 +376,7 @@ export default function HomeTabPop() {
                             </View>
                             <Text style={styles.filterText}>Tagged As</Text>
                             {options.map(option => (
-                              <TouchableOpacity
+                              <Pressable
                                 key={option.id}
                                 style={styles.radioButton}
                               // onPress={() => setSelectedOption(option.label)}
@@ -388,7 +388,7 @@ export default function HomeTabPop() {
                                   {selectedOption === option.label && <View style={styles.innerCircle} />}
                                 </View>
                                 <Text style={styles.optionText} selectable>{option.label}</Text>
-                              </TouchableOpacity>
+                              </Pressable>
                             ))}
 
 

@@ -102,8 +102,8 @@ export default function HomeTab() {
 
                 <View style={styles.row_tab_content_wrapper}>
                   <View style={styles.tab_content_certificate}>
-                    {certificate.map((item) => (
-                      <View key={item} style={styles.item_wrap_certificate}>
+                    {certificate.map((item, k) => (
+                      <View key={k} style={styles.item_wrap_certificate}>
                         <View style={styles.item_inside_card}>
                           <View style={styles.itm_round}></View>
                           <Text style={styles.itm_text}>Certificate of Bird DNA Test </Text>
